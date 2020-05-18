@@ -1,6 +1,6 @@
 # Deno in Docker (on Cloud Run)
 
-To try out if I could make Deno Run on Cloud Run I created this project.
+Concrete example of Deno Run on Cloud Run. Could be used as boilerplate for Deno in Docker / on Google Cloud Run.
 
 ## Run locally
 
@@ -53,3 +53,7 @@ gcloud builds submit --tag gcr.io/$GCP_PROJECT/denotest
 ```shell
 gcloud run deploy denotest --image gcr.io/$GCP_PROJECT/denotest --platform managed --allow-unauthenticated
 ```
+
+## One click to deploy to Cloud Run
+
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/rogiervandenberg/deno-docker-cloudrun)
